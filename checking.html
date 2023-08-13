@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Tickets</title>
+    <link rel="stylesheet" href="aestheticForm.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+    <body id="ticketbooking">
+        <div class="background"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Tickets Details</a></li>
+                <li><a href="#">Personal Details</a></li>
+                <li><a href="#">Payment Details</a></li>
+                <li><a href="#">Confirmation Page</a></li>
+            </ul>
+        </div>
+
+        <div class="table-container">
+            <h2>Ticket Price Details</h2>
+            <div class="price-row">
+                <div class="pice-col">
+                    <p>Time Slots</p>
+                
+                    <ul>
+                        <li>07.00 am - 08.00 am - Normal</li>
+                        <li>08.00 am - 09.00 am - Normal</li>
+                        <li>09.00 am - 10.00 am - Normal</li>
+                        <li>10.00 am - 11.00 am - Peak</li>
+                        <li>11.00 am - 12.00 pm - Peak</li>
+                        <li>12.00 pm - 01.00 pm - Peak</li>
+                        <li>01.00 pm - 02.00 pm - Normal</li>
+                        <li>02.00 pm - 03.00 pm - Normal</li>
+                        <li>03.00 pm - 04.00 pm - Peak</li>
+                        <li>04.00 pm - 05.00 pm - Peak</li>
+                        <li>05.00 pm - 06.00 pm - Peak</li>
+                    </ul>
+                </div>
+                <div class="pice-col">
+                    <p>Srilankan</p>
+                    <h3>Adult</h3>
+                    <ul>
+                        <li>Normal Hours - 4 USD</li>
+                        <li>Peak Hours - 6 USD</li>
+                    </ul>
+                    <h3>Child</h3>
+                    <ul>
+                        <li>Normal Hours - 2 USD</li>
+                        <li>Peak Hours - 3 USD</li>
+                    </ul>
+                    <h3>Infant</h3>
+                    <ul>
+                        <li>Normal Hours - Free</li>
+                        <li>Peak Hours - Free</li>
+                    </ul>
+                    
+                </div>
+                <div class="pice-col">
+                    <p>Foreign</p>
+                    <h3>Adult</h3>
+                    <ul>
+                        <li>Normal Hours - 10 USD</li>
+                        <li>Peak Hours - 13 USD</li>
+                    </ul>
+                    <h3>Child</h3>
+                    <ul>
+                        <li>Normal Hours - 5 USD</li>
+                        <li>Peak Hours - 8 USD</li>
+                    </ul>
+                    <h3>Infant</h3>
+                    <ul>
+                        <li>Normal Hours - Free</li>
+                        <li>Peak Hours - Free</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="CalenderContainer">
+           
+         
+            <div class="Calender">
+                <div class="ClanderHeader">
+                    <div class="month"></div>
+                    <div class="calenderBtn">
+                       
+    
+                        <div class="CalBtn prev-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+    
+                        <div class="CalBtn next-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="calweekdays">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                </div>
+                <div class="caldays">
+                    <div class="day prev">28</div>
+                    <div class="day prev">29</div>
+                    <div class="day prev">30</div>
+    
+    
+    
+    
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+    
+    
+                    <div class="day next">1</div>
+                    <div class="day next">1</div>
+                    <div class="day next">1</div>
+                </div>
+            </div>
+           
+          </div>
+
+       <div class="clickedcal"></div>
+     
+
+
+
+      
+       <div class="guests">
+        <h1>Select the number of Tickets </h1>
+
+       <div class="box">
+        <label>Srilankan Adult<br>
+            <span>Above 15 years</span>
+        </label>
+        <div class="d Btn">-</div>
+        <input type="text" name="guests" id="slAdult" value="0" class="input-field" >
+        <div class="i Btn">+</div>
+       </div>
+
+       <div class="box">
+        <label>Srilankan Child<br>
+            <span>5 to 14 years</span>
+        </label>
+        <div class="d Btn">-</div>
+        <input type="text" name="guests" id="slChild" value="0" class="input-field" >
+        <div class="i Btn">+</div>
+       </div>
+
+       <div class="box">
+        <label>Foreign Adult<br>
+            <span>Above 15 years</span>
+        </label>
+        <div class="d Btn">-</div>
+        <input type="text" name="guests" id="fAdult" value="0" class="input-field">
+        <div class="i Btn">+</div>
+       </div>
+
+       <div class="box">
+        <label>Foreign Child<br>
+            <span>5 to 14 years</span>
+        </label>
+        <div class="d Btn">-</div>
+        <input type="text" name="guests" id="fChild" value="0" class="input-field">
+        <div class="i Btn">+</div>
+       </div>
+
+       <div class="box">
+        <label id="Infant">Infant<br>
+            <span>below 4 years</span>
+        </label>
+        <div class="d Btn">-</div>
+        <input type="text" name="guests" id="inf" value="0" class="input-field">
+        <div class="i Btn">+</div>
+       </div>
+       
+    </div>
+   
+
+
+   
+        <div class="time-container">
+            <h2>Time Selection</h2>
+            <div class="select-btn">
+                <span class="btn-text">Select Time Slot</span>
+                <span class="arrow-btn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+             <ul class="timeselection">
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="1">7.00 AM - 8.00 A.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="2">8.00 AM - 9.00 A.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="3">9.00 AM - 10.00 A.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="4">10.00 AM - 11.00 A.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="5">11.00 AM - 12.00 P.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="6">12.00 PM - 1.00 P.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="7">1.00 PM - 2.00 P.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="8">2.00 PM - 3.00 P.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="9">3.00 PM - 4.00 P.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="10">4.00 PM - 5.00 P.M</p>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <p class="slots-text" value="11">5.00 PM - 6.00 P.M</p>
+                </li>
+             </ul>
+
+        </div>
+
+
+    
+
+
+    <div class="sum-tab">
+
+        <table>
+            <thead>
+              
+            </thead>
+            <tbody id="tbody1">
+
+            </tbody>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+   
+    <button id="contBTN" disabled>Check the total</button>
+    <script src="aestheticForm.js"></script>
+
+    <div class="hatchery-footer">
+
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                <h4>About US</h4>
+                <p>Thank you for visiting the Sri Lanka Turtle Hatchery 
+                    website, a space dedicated to the protection
+                     and preservation of sea turtles. Protecting these amazing species and their habitats 
+                     is our main priority. Our organization was founded with the intention of ensuring the welfare and survival of sea turtle
+                      species that are in risk of extinction, and our objective is to create a safe haven where these ancient marine reptiles can thrive.</p>
+               </div>
+
+               <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="Categories.html">Turtle Categories</a></li>
+                    <li><a href="hikkaduwahatchery.html">Hikkaduwa <br>Hatchery</a></li>
+                    <li><a href="turtlethreats.html">Threats <br>to turtles</a></li>
+                    <li><a href="kosgoda.html">kosgoda</a></li>
+                    <li><a href="bentota.html">Bentota</a></li>
+                    <li><a href="purchaseanddonation.html">Purchase <br>and donations</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-col">
+                <h4>Our Mission</h4>
+                <p>Our goal is to raise awareness about the value
+                     of turtle conservation, promote sustainable 
+                     practices, and inculcate a sense of responsibility for these fascinating creatures.
+                      Join us as we work to ensure that sea turtles can live gracefully in our waters for a long time to come.</p>
+               </div>
+
+               <div class="footer-col" id="copy">
+               
+                <p>Copyright 2023 &copy;</p>
+               </div>
+
+             
+            </div>
+        </div>
+    </div>
+
+
+
+    </body>
+</html>

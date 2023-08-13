@@ -1,0 +1,135 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="aestheticForm.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+       
+
+    </head>
+    <body>
+       
+        <div class="nav">
+            <ul>
+                <li><a href="checking.html">Tickets Details</a></li>
+                <li><a href="#">Personal Details</a></li>
+                <li><a href="#">Payment Details</a></li>
+                <li><a href="#">Confirmation Page</a></li>
+            </ul>
+        </div>
+        
+        <div class="body-container">
+          
+        
+
+ 
+        <div class="form-container">
+            <form id="form" action="payment.html">
+                <h1>Details Page</h1>
+
+                <div class="inputCtrl">
+                    <label for="name">Full Name<br>
+                    <span>Same as on your ID</span>
+                    </label>
+                    <input type="text" id="name" name="name">
+                    <div class="error"></div>
+                </div>
+
+                <div class="inputCtrl">
+                    <label for="pnumber" id="intnum">Mobile Number<br>
+                    <span>We may reach out for booking updates here over SMS/Whatsapp</span>
+                    </label>
+                    <input type="tel" id="pnumber" name="pnumber">
+                    <div class="error"></div>
+                </div>
+
+                <div class="inputCtrl">
+                    <label for="email">Email<br>
+                    <span>We'll send your tickets here</span>
+                    </label>
+                    <input type="text" id="email" name="email">
+                    <div class="error"></div>
+                </div>
+
+                <div class="inputCtrl">
+                    <label for="cemail">Confirm Email<br>
+                    <span>Just to ensure we've got this right</span>
+                    </label>
+                    <input type="text" id="cemail" name="cemail">
+                    <div class="error"></div>
+                </div>
+
+                <button type="submit"  class="detailsBtn">Continue</button>
+            </form>
+        </div>
+
+        <div class="sum-tab">
+            <table>
+                <thead>
+                  
+                </thead>
+                <tbody id="tbody1">
+
+                </tbody>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="hatchery-footer">
+
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                    <h4>About US</h4>
+                    <p>Thank you for visiting the Sri Lanka Turtle Hatchery 
+                        website, a space dedicated to the protection
+                         and preservation of sea turtles. Protecting these amazing species and their habitats 
+                         is our main priority. Our organization was founded with the intention of ensuring the welfare and survival of sea turtle
+                          species that are in risk of extinction, and our objective is to create a safe haven where these ancient marine reptiles can thrive.</p>
+                   </div>
+    
+                   <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="Categories.html">Turtle Categories</a></li>
+                        <li><a href="hikkaduwahatchery.html">Hikkaduwa <br>Hatchery</a></li>
+                        <li><a href="turtlethreats.html">Threats <br>to turtles</a></li>
+                        <li><a href="kosgoda.html">kosgoda</a></li>
+                        <li><a href="bentota.html">Bentota</a></li>
+                        <li><a href="purchaseanddonation.html">Purchase <br>and donations</a></li>
+                      </ul>
+                   </div>
+    
+                   <div class="footer-col">
+                    <h4>Our Mission</h4>
+                    <p>Our goal is to raise awareness about the value
+                         of turtle conservation, promote sustainable 
+                         practices, and inculcate a sense of responsibility for these fascinating creatures.
+                          Join us as we work to ensure that sea turtles can live gracefully in our waters for a long time to come.</p>
+                   </div>
+    
+                   <div class="footer-col" id="copy">
+                   
+                    <p>Copyright 2023 &copy;</p>
+                   </div>
+    
+                 
+                </div>
+            </div>
+        </div>
+    
+
+
+ 
+
+        <script src="aestheticForm.js"></script>
+    </body>
+</html>

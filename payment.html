@@ -1,0 +1,178 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="aestheticForm.css">
+
+    </head>
+    <body >
+        <div class="nav">
+            <ul>
+                <li><a href="#">Tickets Details</a></li>
+                <li><a href="#">Personal Details</a></li>
+                <li><a href="#">Payment Details</a></li>
+                <li><a href="#">Confirmation Page</a></li>
+            </ul>
+        </div>
+        
+        <div class="body-container">
+          
+        
+            <div class="payment">
+
+                <form id="paymentform" action="confirmationpage.html">
+                <h1>Enter your payment details</h1>
+
+
+                <div class="cardfirstrow">
+                    <div class="cardowner">
+                        
+                        <div class="card-input">
+                            <input type="text" id="paymentname" placeholder="&nbsp;">
+                            <label> Card holder name</label>
+                            <div class="paymenterr"></div>
+                        </div>
+                      
+                    </div>
+               
+
+
+             
+                    <div class="cvv">
+                       
+                        <div class="card-input">
+                            <input type="text" id="paymentcvv" placeholder="&nbsp;">
+                            <label>CVV</label>
+                            <div class="paymenterr"></div>
+                        </div>
+                    </div>
+               
+                </div>
+
+                <div class="cardseconrow">
+
+                    <div class="cardno">
+                        <div class="card-input">
+                            <input type="text" id="paymentnum" placeholder="&nbsp;">
+                            <label>Card number</label>
+                            <div class="paymenterr"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardseconrow">
+                    <div class="carddate">
+                        <h3>Expiry Date</h3>
+                        <div class="date-selection">
+                            <div class="date">
+                                <select name="months" id="months">
+                                    <option value="01">Jan</option>
+                                    <option value="02">Feb</option>
+                                    <option value="03">Mar</option>
+                                    <option value="04">Apr</option>
+                                    <option value="05">May</option>
+                                    <option value="06">Jun </option>
+                                    <option value="07">Jul</option>
+                                    <option value="08">Aug</option>
+                                    <option value="09">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                                <select name="years" id="years">
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                                <div class="paymenterr"></div>
+                            </div>
+
+                          
+                        </div>
+                    </div>
+                </div>
+                  <div class="cards">
+                                <img src="Master-Card-Logo-PNG-Image.png" alt="MasterCard">
+                                <img src="VISA-logo.png" alt="Visa card">
+                                <img src="PayPal-PNG-Free-Download.png" alt="Paypal">
+                            </div>
+
+
+
+
+
+
+                <button type="submit" class="payBtn">Continue</button>
+            </form>
+            </div>
+
+            <div class="sum-tab">
+                <table>
+                    <thead>
+                      
+                    </thead>
+                    <tbody id="tbody1">
+
+                    </tbody>
+                    <tbody id="tbody2">
+        
+                    </tbody>
+                </table>
+            </div>
+        
+           </div>
+            <script src="aestheticForm.js"></script>
+            <div class="hatchery-footer">
+
+                <div class="footer-container">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                        <h4>About US</h4>
+                        <p>Thank you for visiting the Sri Lanka Turtle Hatchery 
+                            website, a space dedicated to the protection
+                             and preservation of sea turtles. Protecting these amazing species and their habitats 
+                             is our main priority. Our organization was founded with the intention of ensuring the welfare and survival of sea turtle
+                              species that are in risk of extinction, and our objective is to create a safe haven where these ancient marine reptiles can thrive.</p>
+                       </div>
+        
+                       <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="homepage.html">Home</a></li>
+                            <li><a href="Categories.html">Turtle Categories</a></li>
+                            <li><a href="hikkaduwahatchery.html">Hikkaduwa <br>Hatchery</a></li>
+                            <li><a href="turtlethreats.html">Threats <br>to turtles</a></li>
+                            <li><a href="kosgoda.html">kosgoda</a></li>
+                            <li><a href="bentota.html">Bentota</a></li>
+                            <li><a href="purchaseanddonation.html">Purchase <br>and donations</a></li>
+                          </ul>
+                       </div>
+        
+                       <div class="footer-col">
+                        <h4>Our Mission</h4>
+                        <p>Our goal is to raise awareness about the value
+                             of turtle conservation, promote sustainable 
+                             practices, and inculcate a sense of responsibility for these fascinating creatures.
+                              Join us as we work to ensure that sea turtles can live gracefully in our waters for a long time to come.</p>
+                       </div>
+        
+                       <div class="footer-col" id="copy">
+                       
+                        <p>Copyright 2023 &copy;</p>
+                       </div>
+        
+                     
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
